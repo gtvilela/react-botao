@@ -60,7 +60,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "cross-env CI=true yarn test --passWithNoTests"
+      "pre-push": "cross-env CI=true npm run test --passWithNoTests"
     }
   },
   "lint-staged": {
