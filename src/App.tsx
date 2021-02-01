@@ -15,7 +15,7 @@ function App() {
         Botão teste
       </Button>
 
-      <Input type="text" label="Label teste" />
+      <Input type="text" label="Teste label" />
     </>
   );
 }

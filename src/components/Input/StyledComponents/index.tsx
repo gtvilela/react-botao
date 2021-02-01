@@ -5,3 +5,7 @@ export const InputContainer = styled.input`
       border: 1px solid #000;
       margin: 10px 5px;
 `;
+
+export const LabelContainer = styled.div`
+    font-weight: bold
+`;

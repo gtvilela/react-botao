@@ -1,15 +1,17 @@
 import React, { FC, InputHTMLAttributes } from 'react';
-import { InputContainer } from './StyledComponents/index';
+import { InputContainer, LabelContainer } from './StyledComponents/index';
 
 interface IProps extends InputHTMLAttributes<HTMLInputElement> {
-    label?: string,
-    type: string
+    label: string,
+    type?: string
 }
-const Input: FC<IProps> = ({ type, label }) => (
+const Input: FC<IProps> = ({ type, label, ...rest }) => (
 
   <>
-    {label}
-    <InputContainer type={type} />
+    <label>
+      <LabelContainer>{label}</LabelContainer>
+      <InputContainer type={type} {...rest} />
+    </label>
   </>
 );
 
